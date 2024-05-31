@@ -29,3 +29,32 @@
 .btn-primary:hover {
     background-color: #0056b3;
 }
+
+
+-----navbar--------------
+/* Custom Navbar Styles */
+.navbar {
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    margin-right: 1rem;
+}
+
+.nav-link:hover {
+    color: #dc3545;
+    text-decoration: underline;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28220, 53, 69, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
