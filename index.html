@@ -3,222 +3,986 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
 
+    <!-- google font quick san / playfair -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- fontawesome 5.15.4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- bootstrap 5.3 css1 js1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- owl carousel css2 js1 -->
+    <link rel="stylesheet" href="./assets/libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/libs/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
+    <!-- magnific popup css1 js1 -->
+    <link rel="stylesheet" href="./assets/libs/Magnific-Popup-master/dist/magnific-popup.css">
+
+    <!-- wow js css1 js1-->
+    <link rel="stylesheet" href="./assets/libs/WOW-master/css/libs/animate.css">
+
+    <!-- animate style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-   <!-- nav bar start -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
-    <div class="container">
-        <a class="navbar-brand text-danger fw-bold" href="#">My Portfolio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link active text-danger" aria-current="page" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-danger" href="#about">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-danger" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-danger" href="#portfolio">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-danger" href="#members">Members</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-danger" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<!-- nav bar end -->
-<!-- home start -->
-<section class="home" id="home">
-    <div class="container-lg">
-        <div class="row min-vh-75 align-items-center">
-            <div class="col-md-6 text-center mt-5">
-                <img src="./image/profile1.jpg" class="rounded-circle shadow-sm profile-img" alt="Profile Picture of Tun Min Naing">
-            </div>
-            <div class="col-md-6 mt-5 header-text">
-                <p class="hello-text">Hello, I'm</p>
-                <h1 class="text-danger text-uppercase fs-1 fw-bold">Network Engineer</h1>
-                <h2 class="fs-4">Tun Min Naing</h2>
-                <a href="cv.pdf" download="cv.pdf" class="btn btn-primary mt-3">Download My CV</a>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- home end -->
 
-
-
-        <!-- skill section open  -->
-        <div class="skill py-5 mx-5" id="about">
-            <div class="container-lg">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="section-title text-center mb-5">
-                            <h2 class="fw-bold">About</h2>
+    <!-- start layout -->
+    <div class="layout_main_container">
+        <div class="container_lg">
+            <div class="d-flex layout_container">
+                <!-- start left side -->
+                <div id="left_side_container" class="left_side_container ">
+                    <!-- start aside -->
+                    <aside class="py-5">
+                        <div class="aside_header">
+                            <div class="d-flex flex-column justify-content-center align-items-center profile_container">
+                                <div style="width: 150px; height: 150px;" class="rounded-circle profile_img_container">
+                                    <img src="./assets/imgs/profiles/about.jpg.webp" width="100%" height="100%" style="object-fit: cover;" class="rounded-circle" alt="">
+                                </div>
+                                <h3 class="mt-4">Jackson Ford</h3>
+                                <span class="text-uppercase"><span style="color: var(--skyblue-color);">UI/UX/Designer/</span>In Philippines</span>
+                            </div>
                         </div>
-                    </div>
+                        <div class="mt-2 aside_body">
+                            <ul class="d-flex flex-column align-items-center list-unstyled">
+                                <li class="py-1"><a href="#" class="nav-link active">Home</a></li>
+                                <li class="py-1"><a href="#about" class="nav-link">ABOUT</a></li>
+                                <li class="py-1"><a href="#service" class="nav-link">SERVICES</a></li>
+                                <li class="py-1"><a href="#skill" class="nav-link">SKILLS</a></li>
+                                <li class="py-1"><a href="#education" class="nav-link">EDUCATION</a></li>
+                                <li class="py-1"><a href="#experience" class="nav-link">EXPERIENCE</a></li>
+                                <li class="py-1"><a href="#work" class="nav-link">WORK</a></li>
+                                
+                                <li class="py-1"><a href="#contact" class="nav-link">CONTACT</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="aside_footer">
+
+                        </div>
+                    </aside>
+                    <!-- end aside -->
                 </div>
-    
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="about-text">
-                            <h3 class="fs-3 mb-3">Netwrok Engineer</h3>
-                        </div>
-                        <p class="text-muted mb-3">
-Welcome to my profile, I'm a network engineer passionate about building strong networks.
+                <!-- end left side -->
 
-With 10 years of experience, I've worked on various projects, designing and optimizing networks.
+                <!-- start right side container -->
+                <div class="ms-auto  right_side_container">
+                    <!-- start aside show hide button -->
+                    <button type="button" id="" class="d-block d-lg-none d-flex flex-column align-items-center rounded-0 border-0 aside_show_btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <!-- end aside show hide buttons -->
 
- I'm skilled in configuring and fixing routers, switches, firewalls, and more, ensuring smooth operations.
-
-Committed to learning, I stay updated on the latest trends and technologies.
-
-I work well in teams, explain technical ideas clearly, and deliver projects efficiently.
-
-Excited to use my expertise to improve network performance and security.
-
-Let's connect and discuss building resilient networks together.                        </p>
-                        
-    
-                        <!-- contact btn link  -->
-                        <div class="row mb-4">
-                            <div class="col-lg-12 d-flex align-items-center">
-                                <a href="#" class="btn btn-danger me-4 px-3">Download CV</a>
-                                <div class="social-link">
-                                    <a href="https://www.facebook.com/profile.php?id=100006363339656" target="_blank" class="text-decoration-none">
-                                        <i class="fa-brands fa-facebook-f text-dark me-2"></i>
-                                    </a>
-                                    <a href="#" class="text-decoration-none">
-                                        <i class="fa-brands fa-twitter text-dark me-2"></i>
-                                    </a>
-                                    <a href="#" class="text-decoration-none">
-                                        <i class="fa-brands fa-instagram text-dark me-2"></i>
-                                    </a>
-                                    <a href="#" class="text-decoration-none">
-                                        <i class="fa-brands fa-viber text-dark me-2"></i>
-                                    </a>
+                    <!-- start banner section -->
+                    <section class="banner_section scrollsection">
+                        <div class="banner_content_main_container">
+                            <div class="banner_carousel_container">
+                                <div id="banner_carousel" class="owl-carousel owl-loaded owl-theme">
+                                    <div class="owl-stage-outer">
+                                        <div class="owl-stage">
+                                            <div class="owl-item">
+                                                <div style="background-image: url('./assets/imgs/backgrounds/img_bg_1.jpg.webp');" class="px-2 px-md-5 d-flex flex-column justify-content-center align-items-start banner_content_container ">
+                                                    <div class="animate__animated banner_contents">
+                                                        <h2>Hi ! <br>I'm Jackson</h2>
+                                                        <span class="my-3 d-inline-block">100% html5 bootstrap templates Made by colorlib.com</span><br>
+                                                        <a href="#work" class="d-inline-block nav-link text-uppercase banner_btn ">
+                                                            view portfolio <i class="fas fa-shopping-bag fa-sm"></i>
+                                                        </a>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="owl-item">
+                                                <div style="background-image: url('./assets/imgs/backgrounds/img_bg_2.jpg.webp');" class="px-2 px-md-5 d-flex flex-column justify-content-center align-items-start banner_content_container">
+                                                    <div class="animate__animated banner_contents">
+                                                        <h2>I am <br>a Developer</h2>
+                                                        <span class="my-3 d-inline-block">100% html5 bootstrap templates Made by colorlib.com</span><br>
+                                                        <a href="#" class="d-inline-block nav-link text-uppercase banner_btn ">
+                                                            Download CV <i class="fas fa-download fa-sm"></i>
+                                                        </a>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- close contact btn link  -->
-                    </div>
-                    <div class="col-md-6">
-                        <div class="skill mb-4">
-                            <h3 class="fs-6">
-                                Network Services</h3>
-                            <div class="progress" style="height: 5px">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill mb-4">
-                            <h3 class="fs-6">
-                                Cisco Networking</h3>
-                            <div class="progress" style="height: 5px">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill mb-4">
-                            <h3 class="fs-6">
-                                Wide Area Network (WAN)</h3>
-                            <div class="progress" style="height: 5px">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill mb-4">
-                            <h3 class="fs-6">
-                                Local Area Network (LAN)</h3>
-                            <div class="progress" style="height: 5px">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill mb-4">
-                            <h3 class="fs-6">
-                                Network Design, Implementation and Troubleshooting</h3>
-                            <div class="progress" style="height: 5px">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- skill section close  -->
-      <div class="projects mx-5" id="projects">
-        <div class="container-lg">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title text-center mb-5">
-                        <h2 class="fw-bold">What I Do ?</h2>
-                    </div>
-                </div>
-            </div>
+                    </section>
+                    <!-- end banner section -->
 
-            <!-- project  -->
-            <div class="row text-center">
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="project-item bg-white p-4 shadow-sm rounded">
-                        <div class="icon">
-                            <i class="fa-solid fa-code fs-2 text-danger my-3"></i>
-                        </div>
-                        <h3 class="fs-5 py-2">Web Development</h3>
-                        <p class="text-muted">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed similique porro temporibus quasi! Quibusdam neque placeat quidem tempore doloribus voluptates enim odit inventore. Minima, ipsam nam ullam deserunt maxime praesentium!
-                        </p>
-                    </div>
-                </div>
 
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="project-item bg-white p-4 shadow-sm rounded">
-                        <div class="icon">
-                            <i class="fa-solid fa-lightbulb fs-2 text-danger my-3"></i>
+                    <!-- start about us section -->
+                    <section id="about" class="px-4 about_us_section scrollsection">
+                        <!-- start global title -->
+                        <div class="py-5 global_title">
+                            <div class="row">
+                                <div class="col-md-5 col-sm-12">
+                                    <span class="text-uppercase">About Us</span>
+                                    <h3 class="mt-3 text-uppercase">WHO AM I?</h3>
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="fs-5 py-2">Creative Idea</h3>
-                        <p class="text-muted">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate rerum debitis, rem numquam ut, non nostrum itaque unde autem dolores excepturi, doloremque perferendis quod? Fugiat amet ex ipsa excepturi temporibus?
-                        </p>
-                    </div>
-                </div>
+                        <!-- end global title -->
 
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="project-item bg-white p-4 shadow-sm rounded">
-                        <div class="icon">
-                            <i class="fa-solid fa-image fs-2 text-danger my-3"></i>
+                        <!-- start about us content -->
+                        <div class="global_para">
+                            <p><span class="fw-bold">Hi I'm Jackson Ford</span> On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country</p>
                         </div>
-                        <h3 class="fs-5 py-2">Photoshop</h3>
-                        <p class="text-muted">
-                            Lorem ipsum ddipisicing elit. Odit veritatis modi laborum, tempore necessitatibus nesciunt iusto officia pariatur nisi? Fugiat deserunt est voluptatibus saepe totam officia tempore aliquid ducimus nobis?
-                        </p>
-                    </div>
+                        <div class="global_para">
+                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                        </div>
+
+                        <div class="mt-5 row">
+                            <div class="col-md-3 col-sm-12 mb-5">
+                                <div class="pb-4 about_boxes_container" style="border-bottom: 2px solid var(--skyblue-color);">
+                                    <div class="p-4 about_boxes">
+                                        <span class="d-block mb-3 about_icon" style="color: var(--skyblue-color);"><i class="far fa-lightbulb"></i></span>
+                                        <span class="d-block about_caption">Graphic Designe</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12 mb-5">
+                                <div class="pb-4 about_boxes_container" style="border-bottom: 2px solid var(--brown-color);">
+                                    <div class="p-4 about_boxes">
+                                        <span class="d-block mb-3 about_icon" style="color: var(--brown-color);"><i class="fas fa-globe-americas"></i></span>
+                                        <span class="d-block about_caption">Web Designe</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12 mb-5">
+                                <div class="pb-4 about_boxes_container" style="border-bottom: 2px solid var(--yellow-color);">
+                                    <div class="p-4 about_boxes">
+                                        <span class="d-block mb-3 about_icon" style="color: var(--yellow-color);"><i class="fas fa-database"></i></span>
+                                        <span class="d-block about_caption">Software</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12 mb-5">
+                                <div class="pb-4 about_boxes_container" style="border-bottom: 2px solid var(--violet-color);">
+                                    <div class="p-4 about_boxes">
+                                        <span class="d-block mb-3 about_icon" style="color: var(--violet-color);"><i class="fas fa-mobile-alt"></i></span>
+                                        <span class="d-block about_caption">Application</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-5">
+                                <div class="p-4 hire_me_box">
+                                    <h3 class="mb-4">I am happy to know you <br>that 300+ projects done sucessfully!</h3>
+                                    <a href="#" class="mb-2 btn btn-sm rounded-0  text-uppercase hire_me_btn">hire me</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end about us content -->
+                    </section>
+                    <!-- end about us section -->
+
+                    <!-- start service section -->
+                    <section id="service" class="px-4 what_do_section scrollsection">
+                        <!-- start global title -->
+                        <div class="py-5 global_title">
+                            <div class="row">
+                                <div class="col-md-5 col-sm-12">
+                                    <span class="text-uppercase">WHAT I DO?</span>
+                                    <h3 class="mt-3 text-uppercase">HERE ARE SOME OF MY EXPERTISE</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end global title -->
+
+                        <!-- start service content -->
+                        <div class="row">
+                            <div class="col-md-4 col-12 mb-5 pt-5 ">
+                                <div class="pb-3 service_box_container" style="border-bottom: 2px solid var(--skyblue-color);">
+                                    <div class="d-flex flex-column justify-content-center align-items-center service_box">
+                                        <div class="hasgon_box" style="background-color: var(--skyblue-color);"> 
+                                            <span>
+                                                <i class="far fa-lightbulb"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="service_content">
+                                        <h3 class="mb-4 fw-bold text-center">INNOVATIVE IDEAS</h3>
+                                        <div class="global_para text-center">
+                                            <p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mb-5 pt-5">
+                                <div class="pb-3 service_box_container" style="border-bottom: 2px solid var(--brown-color);">
+                                    <div class="d-flex flex-column justify-content-center align-items-center service_box">
+                                        <div class="hasgon_box" style="background-color: var(--brown-color);">
+                                            <span>
+                                                <i class="fas fa-database"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="service_content">
+                                        <h3 class="mb-4 fw-bold text-center">SOFTWARE
+                                        </h3>
+                                        <div class="global_para text-center">
+                                            <p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mb-5 pt-5">
+                                <div class="pb-3 service_box_container" style="border-bottom: 2px solid var(--yellow-color);">
+                                    <div class="d-flex flex-column justify-content-center align-items-center service_box">
+                                        <div class="hasgon_box" style="background-color: var(--yellow-color);">
+                                            <span>
+                                                <i class="fas fa-mobile-alt"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="service_content">
+                                        <h3 class="mb-4 fw-bold text-center">APPLICATION</h3>
+                                        <div class="global_para text-center">
+                                            <p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mb-5 pt-5">
+                                <div class="pb-3 service_box_container" style="border-bottom: 2px solid var(--violet-color);">
+                                    <div class="d-flex flex-column justify-content-center align-items-center service_box">
+                                        <div class="hasgon_box" style="background-color: var(--violet-color);"> 
+                                            <span>
+                                                <i class="fas fa-layer-group"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="service_content">
+                                        <h3 class="mb-4 fw-bold text-center">IGRAPHIC DESIGN
+                                        </h3>
+                                        <div class="global_para text-center">
+                                            <p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mb-5 pt-5">
+                                <div class="pb-3 service_box_container" style="border-bottom: 2px solid var(--ligth-blue-color);">
+                                    <div class="d-flex flex-column justify-content-center align-items-center service_box">
+                                        <div class="hasgon_box" style="background-color: var(--ligth-blue-color);">
+                                            <span>
+                                                <i class="fas fa-database"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="service_content">
+                                        <h3 class="mb-4 fw-bold text-center">SOFTWARE</h3>
+                                        <div class="global_para text-center">
+                                            <p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mb-5 pt-5">
+                                <div class="pb-3 service_box_container" style="border-bottom: 2px solid var(--bule-color);">
+                                    <div class="d-flex flex-column justify-content-center align-items-center service_box">
+                                        <div class="hasgon_box" style="background-color: var(--bule-color);">
+                                            <span>
+                                                <i class="fas fa-mobile-alt"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="service_content">
+                                        <h3 class="mb-4 fw-bold text-center">APPLICATION</h3>
+                                        <div class="global_para text-center">
+                                            <p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end service content -->
+                    </section>
+                    <!-- end service section -->
+
+                    <!-- start counter section -->
+                    <section class="counter_section ">
+                        <div class="counter_section_container">
+                            <div class="row">
+                                <div class=" px-5 col-md-3 col-sm-12 mb-2">
+                                    <div class="text-center counter_content_container">
+                                        <h2 class="text-white  fw-bold cup_count cupofcoffee">309</h2>
+                                        <span class="text-white fw-light h6 text-uppercase" style="letter-spacing: 2px;">Cups of Coffee</span>
+                                    </div>
+                                </div>
+                                <div class="px-5 col-md-3 col-sm-12 mb-2">
+                                    <div class="text-center counter_content_container">
+                                        <h2 class="text-white  fw-bold cup_count projects">356</h2>
+                                        <span class="text-white fw-light h6 text-uppercase" style="letter-spacing: 2px;">PROJECTS</span>
+                                    </div>
+                                </div>
+                                <div class="px-5 col-md-3 col-sm-12 mb-2">
+                                    <div class="text-center counter_content_container">
+                                        <h2 class="text-white  fw-bold cup_count clients">30</h2>
+                                        <span class="text-white fw-light h6 text-uppercase" style="letter-spacing: 2px;">CLIENTS</span>
+                                    </div>
+                                </div>
+                                <div class="px-5 col-md-3 col-sm-12 mb-2">
+                                    <div class="text-center counter_content_container">
+                                        <h2 class="text-white  fw-bold cup_count partners">10</h2>
+                                        <span class="text-white fw-light h6 text-uppercase" style="letter-spacing: 2px;">PARTNERS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end counter section -->
+
+                    <!-- start my skills section -->
+                    <section id="skill" class="px-4 my_skills_section scrollsection">
+                        <!-- start global title -->
+                        <div class="py-5 global_title">
+                            <div class="row">
+                                <div class="col-md-5 col-sm-12">
+                                    <span class="text-uppercase">MY SPECIALTY</span>
+                                    <h3 class="mt-3 text-uppercase">MY SKILLS</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end global title -->
+                        <div class="global_para">
+                            <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+                        </div>
+
+                        <!-- start skills content -->
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 mb-3">
+                                <div class="skills_range_container">
+                                    <span>Photoshop</span>
+                                    <div class="mt-1 skill_progress">
+                                        <div class="skill_progress_bar"></div>
+                                    </div>
+                                </div>
+                                <div class="mt-3 skills_range_container">
+                                    <span>HTML5</span>
+                                    <div class="mt-1 skill_progress">
+                                        <div class="skill_progress_bar"></div>
+                                    </div>
+                                </div>
+                                <div class="mt-3 skills_range_container">
+                                    <span>WordPress</span>
+                                    <div class="mt-1 skill_progress">
+                                        <div class="skill_progress_bar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 mb-3">
+                                <div class="skills_range_container right">
+                                    <span>Jquery</span>
+                                    <div class="mt-1 skill_progress">
+                                        <div class="skill_progress_bar"></div>
+                                    </div>
+                                </div>
+                                <div class="mt-3 skills_range_container right">
+                                    <span>CSS3</span>
+                                    <div class="mt-1 skill_progress">
+                                        <div class="skill_progress_bar"></div>
+                                    </div>
+                                </div>
+                                <div class="mt-3 skills_range_container right">
+                                    <span>Javascript</span>
+                                    <div class="mt-1 skill_progress">
+                                        <div class="skill_progress_bar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end skills content -->
+                    </section>
+                    <!-- end my skills section -->
+
+                    <!-- start education section -->
+                    <section id="education" class="px-4 education_seciton scrollsection">
+                        <!-- start global title -->
+                        <div class="py-5 global_title">
+                            <div class="row">
+                                <div class="col-md-5 col-sm-12">
+                                    <span class="text-uppercase">MY SPECIALTY</span>
+                                    <h3 class="mt-3 text-uppercase">Education</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end global title -->
+
+                        <!-- start education accordian  -->
+                        <div class="education_accordian_container">
+                            <div>
+                                <!-- accordian title -->
+                                <div class="my-1 d-flex justify-content-between align-items-center border accordian_title active ">
+                                    <h4 class="p-0 m-0">MASTER DEGREE GRAPHIC DESIGN</h4>
+                                    <i class="fas fa-minus"></i>
+                                </div>
+                                <!-- end accordian title  -->
+                                <!-- accordian content -->
+                                <div class=" accordian_content active">
+                                    <div class="border">
+                                        <div class="p-3 row ">
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="global_para">
+                                                    <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, .</p>
+                                                </div>
+                                            </div>  
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="global_para">
+                                                    <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli,</p>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end accordian content -->
+                            </div>
+
+                            <div>
+                                <!-- accordian title -->
+                                <div class="my-1 d-flex justify-content-between align-items-center border accordian_title  ">
+                                    <h4 class="p-0 m-0">BACHELOR DEGREE OF COMPUTER SCIENCE</h4>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <!-- end accordian title  -->
+                                <!-- accordian content -->
+                                <div class=" accordian_content  ">
+                                    <div class="border">
+                                        <div class="p-3 row ">
+                                            <div class="col-md-12 col-sm-12">
+                                                <div class="global_para">
+                                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+
+                                                    <ul>
+                                                        <li>Separated they live in Bookmarksgrove right</li>
+                                                        <li>Separated they live in Bookmarksgrove right</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end accordian content -->
+                            </div>
+
+                            <div>
+                                <!-- accordian title -->
+                                <div class="my-1 d-flex justify-content-between align-items-center border accordian_title  ">
+                                    <h4 class="p-0 m-0">DIPLOMA IN INFORMATION TECHNOLOGY</h4>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <!-- end accordian title  -->
+                                <!-- accordian content -->
+                                <div class=" accordian_content ">
+                                    <div class="border">
+                                        <div class="p-3 row ">
+                                            <div class="col-md-12 col-sm-12">
+                                                <div class="global_para">
+                                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end accordian content -->
+                            </div>
+
+                            <div>
+                                <!-- accordian title -->
+                                <div class="my-1 d-flex justify-content-between align-items-center border accordian_title  ">
+                                    <h4 class="p-0 m-0">DIPLOMA IN INFORMATION TECHNOLOGY</h4>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <!-- end accordian title  -->
+                                <!-- accordian content -->
+                                <div class=" accordian_content ">
+                                    <div class="border">
+                                        <div class="p-3 row ">
+                                            <div class="col-md-12 col-sm-12">
+                                                <div class="global_para">
+                                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end accordian content -->
+                            </div>
+
+                            <div>
+                                <!-- accordian title -->
+                                <div class="my-1 d-flex justify-content-between align-items-center border accordian_title  ">
+                                    <h4 class="p-0 m-0">HIGH SCHOOL SECONDARY EDUCATION</h4>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <!-- end accordian title  -->
+                                <!-- accordian content -->
+                                <div class=" accordian_content ">
+                                    <div class="border">
+                                        <div class="p-3 row ">
+                                            <div class="col-md-12 col-sm-12">
+                                                <div class="global_para">
+                                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                                                </div>
+                                            </div>   
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end accordian content -->
+                            </div>
+
+                        </div>
+                        <!-- end education accordian -->
+                    </section>
+                    <!-- end education section -->
+
+                    <!-- start exp seciton -->
+                    <section id="experience" class="px-4 exp_section scrollsection">
+                        <div class="exp_section_container">
+                            <!-- start global title -->
+                            <div class="py-5 global_title">
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-12">
+                                        <span class="text-uppercase">EXPERIENCE</span>
+                                        <h3 class="mt-3 text-uppercase">WORK EXPERIENCE</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end global title -->
+
+                            <!-- start exp timeline -->
+                            <div class=" exp_timeline_container">
+                                <div class="exp_content">
+                                    <div class="timeline"></div>
+                                    <div class="timeline_content_container">
+                                        <div class="mb-4 d-flex align-items-center timeline_content_title">
+                                            <h4 class="p-0 m-0 me-2">Full Stack Developer</h4>
+                                            <span class=" fw-semibold ">2017-2018</span>
+                                        </div>
+                                        <!-- start global para -->
+                                        <div class="global_para">
+                                            <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
+                                        </div>
+                                        <!-- end global para -->
+                                    </div>
+                                    <div class="timeline_content_container">
+                                        <div class="mb-4 d-flex align-items-center timeline_content_title">
+                                            <h4 class="p-0 m-0 me-2">Front End Developer at Google Company</h4>
+                                            <span class=" fw-semibold ">2017-2018</span>
+                                        </div>
+                                        <!-- start global para -->
+                                        <div class="global_para">
+                                            <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
+                                        </div>
+                                        <!-- end global para -->
+                                    </div>
+                                    <div class="timeline_content_container">
+                                        <div class="mb-4 d-flex align-items-center timeline_content_title">
+                                            <h4 class="p-0 m-0 me-2">System Analyst</h4>
+                                            <span class=" fw-semibold ">2017-2018</span>
+                                        </div>
+                                        <!-- start global para -->
+                                        <div class="global_para">
+                                            <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
+                                        </div>
+                                        <!-- end global para -->
+                                    </div>
+                                    <div class="timeline_content_container">
+                                        <div class="mb-4 d-flex align-items-center timeline_content_title">
+                                            <h4 class="p-0 m-0 me-2">Creative Designer</h4>
+                                            <span class=" fw-semibold ">2017-2018</span>
+                                        </div>
+                                        <!-- start global para -->
+                                        <div class="global_para">
+                                            <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
+                                        </div>
+                                        <!-- end global para -->
+                                    </div>
+                                    <div class="timeline_content_container">
+                                        <div class="mb-4 d-flex align-items-center timeline_content_title">
+                                            <h4 class="p-0 m-0 me-2">UI/UX Designer at Envato</h4>
+                                            <span class=" fw-semibold ">2017-2018</span>
+                                        </div>
+                                        <!-- start global para -->
+                                        <div class="global_para">
+                                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                                        </div>
+                                        <!-- end global para -->
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- end exp timeline -->
+                        </div>
+                    </section>
+                    <!-- end exp secition -->
+
+                    <!-- start recente work section -->
+                    <section id="work" class="px-4 recent_work scrollsection"> 
+                        <div class="recent_work_container">
+                            <!-- start global title -->
+                            <div class="py-5 global_title">
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-12">
+                                        <span class="text-uppercase">MY WORK</span>
+                                        <h3 class="mt-3 text-uppercase">RECENT WORK</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end global title -->
+
+                            <!-- start recent work content -->
+                            <div class="recent_work_content_container">
+                                <div class="recent_work_tabs_container">
+                                    <ul class="d-flex gap-3 list-unstyled">
+                                        <li class="active" show-tab = "all"><a href="javascript:void(0)" class="nav-link" >All</a></li>
+
+                                        <li show-tab = "graphic_design"><a href="javascript:void(0)" class="nav-link" s>Graphic Design</a></li>
+
+                                        <li show-tab = "web_design"><a href="javascript:void(0)" class="nav-link" >Web Design</a></li>
+
+                                        <li show-tab = "software"><a href="javascript:void(0)" class="nav-link" >Software</a></li>
+
+                                        <li show-tab = "app"><a href="javascript:void(0)" class="nav-link" >Apps</a></li>
+                                    </ul>
+                                </div>
+                                <div class="recent_work_gallery_container">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 mb-4 recent_gallery graphic_design">
+                                            <div class="recent_work_gallery">
+                                                <img src="./assets/imgs/gallery/img-1.jpg.webp" width="100%" height="100%" style="object-fit: cover;" alt="">
+                                                <div class="px-4 py-3 d-flex flex-column justify-content-between align-items-start bg-primary recent_work_overlayer">
+                                                    <div>
+                                                        <h5 class="m-0 p-0 text-white text-uppercase ">Work 1</h5>
+                                                        <small class="text-white">Website</small>
+                                                    </div>
+                                                    
+                                                    <div>
+                                                        <div class="d-flex">
+                                                            <ul class="gap-3 d-flex list-unstyled">
+                                                                <li>
+                                                                    <a href="#" class="nav-link">
+                                                                        <i class="fas fa-share"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="nav-link">
+                                                                        <i class="fas fa-eye"></i>
+                                                                        100
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="nav-link">
+                                                                        <i class="fas fa-heart"></i>
+                                                                        45
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 mb-4 recent_gallery web_design">
+                                            <div class="recent_work_gallery">
+                                                <img src="./assets/imgs/gallery/img-2.jpg.webp" width="100%" height="100%" style="object-fit: cover;" alt="">
+                                                <div class="px-4 py-3 d-flex flex-column justify-content-between align-items-start bg-primary recent_work_overlayer">
+                                                    <div>
+                                                        <h5 class="m-0 p-0 text-white text-uppercase ">Work 1</h5>
+                                                        <small class="text-white">Website</small>
+                                                    </div>
+                                                    
+                                                    <div>
+                                                        <div class="d-flex">
+                                                            <ul class="gap-3 d-flex list-unstyled">
+                                                                <li>
+                                                                    <a href="#" class="nav-link">
+                                                                        <i class="fas fa-share"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="nav-link">
+                                                                        <i class="fas fa-eye"></i>
+                                                                        100
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="nav-link">
+                                                                        <i class="fas fa-heart"></i>
+                                                                        45
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 mb-4 recent_gallery software" >
+                                            <div class="recent_work_gallery">
+                                                <img src="./assets/imgs/gallery/img-3.jpg.webp" width="100%" height="100%" style="object-fit: cover;" alt="">
+                                                <div class="px-4 py-3 d-flex flex-column justify-content-between align-items-start bg-primary recent_work_overlayer">
+                                                    <div>
+                                                        <h5 class="m-0 p-0 text-white text-uppercase ">Work 1</h5>
+                                                        <small class="text-white">Website</small>
+                                                    </div>
+                                                    
+                                                    <div>
+                                                        <div class="d-flex">
+                                                            <ul class="gap-3 d-flex list-unstyled">
+                                                                <li>
+                                                                    <a href="#" class="nav-link">
+                                                                        <i class="fas fa-share"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="nav-link">
+                                                                        <i class="fas fa-eye"></i>
+                                                                        100
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="nav-link">
+                                                                        <i class="fas fa-heart"></i>
+                                                                        45
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 mb-4 recent_gallery app">
+                                            <div class="recent_work_gallery">
+                                                <img src="./assets/imgs/gallery/img-4.jpg.webp" width="100%" height="100%" style="object-fit: cover;" alt="">
+                                                <div class="px-4 py-3 d-flex flex-column justify-content-between align-items-start bg-primary recent_work_overlayer">
+                                                    <div>
+                                                        <h5 class="m-0 p-0 text-white text-uppercase ">Work 1</h5>
+                                                        <small class="text-white">Website</small>
+                                                    </div>
+                                                    
+                                                    <div>
+                                                        <div class="d-flex">
+                                                            <ul class="gap-3 d-flex list-unstyled">
+                                                                <li>
+                                                                    <a href="#" class="nav-link">
+                                                                        <i class="fas fa-share"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="nav-link">
+                                                                        <i class="fas fa-eye"></i>
+                                                                        100
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="nav-link">
+                                                                        <i class="fas fa-heart"></i>
+                                                                        45
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 mb-4 recent_gallery graphic_design">
+                                            <div class="recent_work_gallery">
+                                                <img src="./assets/imgs/gallery/img-5.jpg.webp" width="100%" height="100%" style="object-fit: cover;" alt="">
+                                                <div class="px-4 py-3 d-flex flex-column justify-content-between align-items-start bg-primary recent_work_overlayer">
+                                                    <div>
+                                                        <h5 class="m-0 p-0 text-white text-uppercase ">Work 1</h5>
+                                                        <small class="text-white">Website</small>
+                                                    </div>
+                                                    
+                                                    <div>
+                                                        <div class="d-flex">
+                                                            <ul class="gap-3 d-flex list-unstyled">
+                                                                <li>
+                                                                    <a href="#" class="nav-link">
+                                                                        <i class="fas fa-share"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="nav-link">
+                                                                        <i class="fas fa-eye"></i>
+                                                                        100
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="nav-link">
+                                                                        <i class="fas fa-heart"></i>
+                                                                        45
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 mb-4 recent_gallery web_design">
+                                            <div class="recent_work_gallery">
+                                                <img src="./assets/imgs/gallery/img-6.jpg.webp" width="100%" height="100%" style="object-fit: cover;" alt="">
+                                                <div class="px-4 py-3 d-flex flex-column justify-content-between align-items-start bg-primary recent_work_overlayer">
+                                                    <div>
+                                                        <h5 class="m-0 p-0 text-white text-uppercase ">Work 1</h5>
+                                                        <small class="text-white">Website</small>
+                                                    </div>
+                                                    
+                                                    <div>
+                                                        <div class="d-flex">
+                                                            <ul class="gap-3 d-flex list-unstyled">
+                                                                <li>
+                                                                    <a href="#" class="nav-link">
+                                                                        <i class="fas fa-share"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="nav-link">
+                                                                        <i class="fas fa-eye"></i>
+                                                                        100
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="nav-link">
+                                                                        <i class="fas fa-heart"></i>
+                                                                        45
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <!-- end recent work content -->
+                        </div>
+
+                    </section>
+                    <!-- end recent work section -->
+
+                    <!-- start contact section -->
+                    <section id="contact" class="px-4 contact_section scrollsection">
+                        <div class="contact_section_container">
+                            <!-- start global title -->
+                            <div class="py-5 global_title">
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-12">
+                                        <span class="text-uppercase">GET IN TOUCH</span>
+                                        <h3 class="mt-3 text-uppercase">CONTACT</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end global title -->
+
+                            <!-- start contact content -->
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12 mb-3">
+                                    <div class="mb-2 d-flex justify-content-start align-items-center contact_content">
+                                        <div class="text-primary contact_icon">
+                                            <i class="fas fa-sync"></i>
+                                        </div>
+                                        <div class="ms-3">
+                                            <a href="#" class="nav-link text-primary">info@domain.com</a>
+                                        </div>
+                                    </div>
+                                    <div class="mb-2 d-flex justify-content-start align-items-center contact_content">
+                                        <div class="text-primary contact_icon">
+                                            <i class="fas fa-map"></i>
+                                        </div>
+                                        <div class="ms-3">
+                                            <a href="#" class="nav-link">198 West 21th Street, Suite 721 New York NY 10016</a>
+                                        </div>
+                                    </div>
+                                    <div class="mb-2 d-flex justify-content-start align-items-center contact_content">
+                                        <div class="text-primary contact_icon">
+                                            <i class="fas fa-phone"></i>
+                                        </div>
+                                        <div class="ms-3">
+                                            <a href="#" class="nav-link text-primary">+123 456 7890</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12 mb-3">
+                                    <div class="content_form">
+                                        <form action="">
+                                            <div class="form-group mb-3">
+                                                <input type="text" name="" id="" class="form-control rounded-0 shadow-none outline-none border-0" placeholder="Name">
+                                            </div>
+                                            <div class="form-group mb-3">
+                                                <input type="email" name="" id="" class="form-control rounded-0 shadow-none outline-none border-0" placeholder="Email">
+                                            </div>
+                                            <div class="form-group mb-3">
+                                                <input type="text" name="" id="" class="form-control rounded-0 shadow-none outline-none border-0" placeholder="Subject">
+                                            </div>
+                                            <div class="form-group mb-3">
+                                                <textarea name="" id="" class="form-control rounded-0 shadow-none outline-none border-0" placeholder="Message" rows="5"></textarea>
+                                            </div>
+                                            <div>
+                                                <button type="submit" class="btn  btn-primary rounded-0 text-uppercase">Send Message</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end contact content -->
+                        </div>
+                    </section>
+                    <!-- end contact section -->
                 </div>
+                <!-- end right side containe -->
             </div>
-            <!-- project  -->
+            
         </div>
     </div>
-    <!-- project section close  -->
+    <!-- end layout -->
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <!-- bootstrap 5.3 css1 js1 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- jquery 3.7.1 js1-->
+    <script src="./assets/libs/jquery_3_7_1.js"></script>
+
+    <!-- owl carousel css2 js1 -->
+    <script src="./assets/libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+    <!-- magnific popup css1 js1 -->
+    <script src="./assets/libs/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
+
+    <!-- wow js css1 js1 -->
+    <script src="./assets/libs/WOW-master/dist/wow.min.js"></script>
+
+    <!-- counter up css0 js1 -->
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
+
+    <!-- custom js -->
+    <script src="./assets/js/app.js"></script>
+
 </body>
-</body>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
 </html>
