@@ -1,224 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-</head>
-<body>
-   <!-- nav bar start -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
-    <div class="container">
-        <a class="navbar-brand text-danger fw-bold" href="#">My Portfolio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link active text-danger" aria-current="page" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-danger" href="#about">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-danger" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-danger" href="#portfolio">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-danger" href="#members">Members</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-danger" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<!-- nav bar end -->
-<!-- home start -->
-<section class="home" id="home">
-    <div class="container-lg">
-        <div class="row min-vh-75 align-items-center">
-            <div class="col-md-6 text-center mt-5">
-                <img src="./image/profile1.jpg" class="rounded-circle shadow-sm profile-img" alt="Profile Picture of Tun Min Naing">
-            </div>
-            <div class="col-md-6 mt-5 header-text">
-                <p class="hello-text">Hello, I'm</p>
-                <h1 class="text-danger text-uppercase fs-1 fw-bold">Network Engineer</h1>
-                <h2 class="fs-4">Tun Min Naing</h2>
-                <a href="cv.pdf" download="cv.pdf" class="btn btn-primary mt-3">Download My CV</a>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- home end -->
-
-
-
-        <!-- skill section open  -->
-        <div class="skill py-5 mx-5" id="about">
-            <div class="container-lg">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="section-title text-center mb-5">
-                            <h2 class="fw-bold">About</h2>
-                        </div>
-                    </div>
-                </div>
+  <head>
+    <title>My Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="about-text">
-                            <h3 class="fs-3 mb-3">Netwrok Engineer</h3>
-                        </div>
-                        <p class="text-muted mb-3">
-Welcome to my profile, I'm a network engineer passionate about building strong networks.
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-With 10 years of experience, I've worked on various projects, designing and optimizing networks.
-
- I'm skilled in configuring and fixing routers, switches, firewalls, and more, ensuring smooth operations.
-
-Committed to learning, I stay updated on the latest trends and technologies.
-
-I work well in teams, explain technical ideas clearly, and deliver projects efficiently.
-
-Excited to use my expertise to improve network performance and security.
-
-Let's connect and discuss building resilient networks together.                        </p>
-                        
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     
-                        <!-- contact btn link  -->
-                        <div class="row mb-4">
-                            <div class="col-lg-12 d-flex align-items-center">
-                                <a href="#" class="btn btn-danger me-4 px-3">Download CV</a>
-                                <div class="social-link">
-                                    <a href="https://www.facebook.com/profile.php?id=100006363339656" target="_blank" class="text-decoration-none">
-                                        <i class="fa-brands fa-facebook-f text-dark me-2"></i>
-                                    </a>
-                                    <a href="#" class="text-decoration-none">
-                                        <i class="fa-brands fa-twitter text-dark me-2"></i>
-                                    </a>
-                                    <a href="#" class="text-decoration-none">
-                                        <i class="fa-brands fa-instagram text-dark me-2"></i>
-                                    </a>
-                                    <a href="#" class="text-decoration-none">
-                                        <i class="fa-brands fa-viber text-dark me-2"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- close contact btn link  -->
-                    </div>
-                    <div class="col-md-6">
-                        <div class="skill mb-4">
-                            <h3 class="fs-6">
-                                Network Services</h3>
-                            <div class="progress" style="height: 5px">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill mb-4">
-                            <h3 class="fs-6">
-                                Cisco Networking</h3>
-                            <div class="progress" style="height: 5px">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill mb-4">
-                            <h3 class="fs-6">
-                                Wide Area Network (WAN)</h3>
-                            <div class="progress" style="height: 5px">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill mb-4">
-                            <h3 class="fs-6">
-                                Local Area Network (LAN)</h3>
-                            <div class="progress" style="height: 5px">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill mb-4">
-                            <h3 class="fs-6">
-                                Network Design, Implementation and Troubleshooting</h3>
-                            <div class="progress" style="height: 5px">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	     
+			
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Experience</span></a></li>
+	          <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+	          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	      <div class="slider-item ">
+	      	<div class="overlay"></div>
+	        <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url();">
+	          		<div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Tun Min Naing</span></h1>
+			            <h2 class="mb-4">Network Engineer</h2>
+			            
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+
+	      
+		  
+	    </div>
+    </section>
+
+	
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+    		<div class="row d-flex">
+    			<div class="col-md-6 col-lg-5 d-flex">
+    				<div class="img-about img d-flex align-items-stretch">
+    					<div class="overlay"></div>
+	    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/profile1.jpg);">
+	    				</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+    				<div class="row justify-content-start pb-3">
+		          <div class="col-md-12 heading-section ftco-animate">
+		          	<h1 class="big">About</h1>
+		            <h2 class="mb-4">About Me</h2>
+		            <p> Welcome to my profile! I'm a network engineer passionate about building robust networks.
+                        With 10 years of experience, I've worked on various projects, designing and optimizing networks.
+	                    I am skilled in configuring and troubleshooting routers, switches, firewalls, and more, ensuring smooth operations.
+	                    Committed to continuous learning, I stay updated on the latest trends and technologies.
+	                    I excel in team environments, communicate technical concepts clearly, and deliver projects efficiently.
+	                    I'm excited to leverage my expertise in improving network performance and security.
+	                    Let's connect and discuss building resilient networks together.</p>
+		           
+		          </div>
+		        </div>
+	          <div class="counter-wrap ftco-animate d-flex mt-md-3">
+              <div class="text">
+              	
+                <p><a href="cv.pdf" class="btn btn-primary py-3 px-3">Download CV</a></p>
+              </div>
+	          </div>
+	        </div>
         </div>
-        <!-- skill section close  -->
-      <div class="projects mx-5" id="projects">
-        <div class="container-lg">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title text-center mb-5">
-                        <h2 class="fw-bold">What I Do ?</h2>
-                    </div>
-                </div>
-            </div>
+    	</div>
+    </section>
 
-            <!-- project  -->
-            <div class="row text-center">
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="project-item bg-white p-4 shadow-sm rounded">
-                        <div class="icon">
-                            <i class="fa-solid fa-code fs-2 text-danger my-3"></i>
-                        </div>
-                        <h3 class="fs-5 py-2">Web Development</h3>
-                        <p class="text-muted">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed similique porro temporibus quasi! Quibusdam neque placeat quidem tempore doloribus voluptates enim odit inventore. Minima, ipsam nam ullam deserunt maxime praesentium!
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="project-item bg-white p-4 shadow-sm rounded">
-                        <div class="icon">
-                            <i class="fa-solid fa-lightbulb fs-2 text-danger my-3"></i>
-                        </div>
-                        <h3 class="fs-5 py-2">Creative Idea</h3>
-                        <p class="text-muted">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate rerum debitis, rem numquam ut, non nostrum itaque unde autem dolores excepturi, doloremque perferendis quod? Fugiat amet ex ipsa excepturi temporibus?
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="project-item bg-white p-4 shadow-sm rounded">
-                        <div class="icon">
-                            <i class="fa-solid fa-image fs-2 text-danger my-3"></i>
-                        </div>
-                        <h3 class="fs-5 py-2">Photoshop</h3>
-                        <p class="text-muted">
-                            Lorem ipsum ddipisicing elit. Odit veritatis modi laborum, tempore necessitatibus nesciunt iusto officia pariatur nisi? Fugiat deserunt est voluptatibus saepe totam officia tempore aliquid ducimus nobis?
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- project  -->
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          
+            <h2 class="mb-4">My experience</h2>
+          </div>
         </div>
-    </div>
-    <!-- project section close  -->
+    		<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">Nov 2021 - Apr 2024 </span>
+    					<h2>Senior Network Engineer</h2>
+						<h4>
+							Streamnet Co.,Ltd · Full-time</h4>
+    					<span class="position">Mandalay, Myanmar · On-site</span>
+    					<p class="mt-4">
+							• Ensured compliance with service level agreements, managing initial response, resolution, and communication processes with the escalation of critical issues as necessary.<br>
+							• Leaded the planning, implementation, and maintenance of Core infrastructure according to best practices, but not limited to routers, switches, Wi-Fi, firewalls, servers and etc.<br>
+							• Managed system backups and network protocols.<br>
+							• Collaborated with vendors, partners, and external experts to stay up-to-date with emerging threats and industry trends.<br>
+							• Identified operational or technical gaps and propose improvements in operational processes.<br>
+							• Documented network configurations, processes, and procedures ensures clarity and consistency. Having well-documented guidelines helps maintain network performance across all client sites.<br>
+							• Monitored the network’s performance, availability, and reliability using third-party applications – Cacti, Nagios, LibreNMS, PRTG and Smokeping. They monitor data flow, latency, and potential bottlenecks to maintain optimal functioning.<br>
+						</p>
+    				</div>
+					<div class="resume-wrap ftco-animate">
+    					<span class="date">Aug 2014 - Sep 2018 · 4 yrs 2 mos </span>
+    					<h2>Network Engineer</h2>
+						<h4>
+							Frontiir Co.,Ltd · Full-time</h4>
+    					<span class="position">Yangon, Myanmar · On-site</span>
+    					<p class="mt-4">
+							• Performed hardening, upgrade and enhancement on Core infrastructure components.
+                            • Assisted on technical communications with customer/partner, to ensure closure of sales order.
+                            • Participated in network implementation projects and initiatives.
+                            • Handled for maintaining network software, ensuring seamless connectivity and efficient data transfer.
+                            • Worked closely with operations teams in day-to-day activities.
+                            • Troubleshoot and resolved issues promptly when problem arise. This includes diagnosing hardware and software problems, identifying network glitches, and minimizing downtime.
+						</p>
+    				</div>
+    			</div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
-</body>
-</body>
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">Sep 2018 - Nov 2021 · 3 yrs 3 mos </span>
+    					<h2>Senior Network Engineer</h2>
+						<h4>
+							Horizon Telecom International Co.,Ltd · Full-time</h4>
+    					<span class="position">Yangon, Myanmar · On-site</span>
+    					<p class="mt-4">
+							• Ensured compliance with service level agreements, managing initial response, resolution, and communication processes with the escalation of critical issues as necessary.<br>
+							• Leaded the planning, implementation, and maintenance of Core infrastructure according to best practices, but not limited to routers, switches, Wi-Fi, firewalls, servers and etc.<br>
+							• Managed system backups and network protocols.<br>
+							• Collaborated with vendors, partners, and external experts to stay up-to-date with emerging threats and industry trends.<br>
+							• Identified operational or technical gaps and propose improvements in operational processes.<br>
+							• Documented network configurations, processes, and procedures ensures clarity and consistency. Having well-documented guidelines helps maintain network performance across all client sites.<br>
+							• Monitored the network’s performance, availability, and reliability using third-party applications – Cacti, Nagios, LibreNMS, PRTG and Smokeping. They monitor data flow, latency, and potential bottlenecks to maintain optimal functioning.<br>
+						</p>
+    				</div>
+    			
+    				
+    			</div>
+    		</div>
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+		
+		<section class="ftco-section" id="skills-section">
+			<div class="container">
+				<div class="row justify-content-center pb-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	
+            <h2 class="mb-4">My Skills</h2>
+          </div>
+        </div>
+				<div class="row">
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>
+								Wide Area Network (WAN)</h3>
+							<div class="progress">
+							 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
+							    <span>90%</span>
+							  	</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>
+								LAN-WAN</h3>
+							<div class="progress">
+							 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="85"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
+							    <span>85%</span>
+							  	</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>
+								Network Services</h3>
+							<div class="progress">
+							 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="95"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:95%">
+							    <span>95%</span>
+							  	</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>
+								Cisco Networking</h3>
+							<div class="progress">
+							 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
+							    <span>90%</span>
+							  	</div>
+							</div>
+						</div>
+					</div>
+				
+				
+				</div>
+			</div>
+		</section>
+ 
+
+    <section class="ftco-section ftco-project" id="projects-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	
+            <h2 class="mb-4">Projects</h2>
+          </div>
+        </div>
+    		<div class="row">
+    			<div class="col-md-4">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/p2.JPG);">
+	    				
+    				</div>
+  				</div>
+  				<div class="col-md-8">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/p2.jpg);">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3><a href="#">Branding &amp; Illu</a></h3>
+	    					<span>Web Design</span>
+	    				</div>
+    				</div>
+  				</div>
+
+    			<div class="col-md-8">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/p5.JPG);">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
+	    					<span>Web Design</span>
+	    				</div>
+    				</div>
+
+    				
+    			</div>
+    			
+    		</div>
+    	</div>
+    </section>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+ 
+    <section class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>I'm <span>Available</span> for Network Engineer Position</h2>
+						<p class="mb-0"><a href="#" class="btn btn-primary py-3 px-5">Hire me</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h2 class="mb-4">Contact Me</h2>
+           
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>09-74 Block 569 Pasir Ris street 51 510569, Singapore</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://1234567920">+ 83418210 (Mobile)</a>
+				</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:mr.tunminnaing1993@gmail.com">mr.tunminnaing1993@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">LinkedIn</h3>
+	            <p><a href="linkedin.com/in/tun-min-naing">linkedin.com/in/tun-min-naing</a></p>
+	          </div>
+          </div>
+        </div>
+
+        <div class="row no-gutters block-9">
+          <div class="col-md-6 order-md-last d-flex">
+            <form action="#" class="bg-light p-4 p-md-5 contact-form">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Name">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Email">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Subject">
+              </div>
+              <div class="form-group">
+                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+              </div>
+            </form>
+          
+          </div>
+
+          <div class="col-md-6 d-flex">
+          	<div class="img" style="background-image: url(images/profile1.jpg);"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+		
+
+    <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        
+        
+        </div>
+       
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
 </html>
