@@ -9682,3 +9682,24 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+    .skills-list {
+      list-style: none;
+      padding: 0;
+  }
+  
+  .skills-list li {
+      display: flex;
+      justify-content: space-between;
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
+  
+  .skill-name {
+      font-weight: bold;
+  }
+  
+  .skill-level {
+      font-style: italic;
+  }
+  
